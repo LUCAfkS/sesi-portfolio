@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lucas Rodrigues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Seção Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Lucas Rodrigues</h1>
+                <h2>Aspirante a ADS</h2>
+                <p class="portfolio-title">Portfolio sesi vasco; 3°A</p>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="about">
+            <div class="about-content">
+                <h2>Conheça o Lucas</h2>
+                <p>Sou estudante de Análise e Desenvolvimento de Sistemas na rede SESI/SENAI(ano de conclusão: 2025), com interesse crescente na área de Tecnologia da Informação. Tenho me dedicado especialmente ao desenvolvimento web, onde já venho criando projetos pessoais para aprender na prática e aprimorar minhas habilidades. Também estou começando a explorar Inteligência Artificial e sigo em busca de aprendizado contínuo e oportunidades para crescer profissionalmente.</p>
+            </div>
+            <div class="about-image">
+                <img src="/1326091.jpeg" alt="Lucas Rodrigues">
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section class="projects">
+            <div class="section-header">
+                <div class="category-tag matematica" onclick="selecionar(this.innerText)">MATEMÁTICA</div>
+                <div class="category-tag natureza" onclick="selecionar(this.innerText)">NATUREZA</div>
+                <div class="category-tag linguagem" onclick="selecionar(this.innerText)">LINGUAGEM</div>
+                <div class="category-tag humanas" onclick="selecionar(this.innerText)">HUMANAS</div>
+                <div class="category-tag senai" onclick="selecionar(this.innerText)">SENAI</div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="./mcosfos_files/7c3e0c6b39cb97233a5e2dfb58392a59.jpg" alt="Projeto Matemática">
+                    <h3>O Mundo com Pouco Orçamento</h3>
+                    <p>Apresente seus melhores posts de viagem para os parceiros de mídia terem uma ideia do tipo de trabalho que você produz.</p>
+                </div>
+                <div class="project">
+                    <img src="./mcosfos_files/48918ceb50f896ec0b73f25d349eadad.jpg" alt="Projeto Natureza">
+                    <h3>Inverno Encantado</h3>
+                    <p>Apresente seus melhores posts de viagem para os parceiros de mídia terem uma ideia do tipo de trabalho que você produz.</p>
+                </div>
+                <div class="project">
+                    <img src="./mcosfos_files/2d65c149feb5d5e242481dce227cd8fc.jpg" alt="Projeto Linguagem">
+                    <h3>A Estrada Menos Viajada</h3>
+                    <p>Apresente seus melhores posts de viagem para os parceiros de mídia terem uma ideia do tipo de trabalho que você produz.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Blog -->
+        <section class="blog">
+            <h2>O Que Esperar dos Meus Blogs</h2>
+            
+            <div class="blog-topics">
+                <div class="topic">
+                    <img src="./mcosfos_files/47265e70efe6602fba20752952b45635.jpg" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Atrações Imperdíveis</h3>
+                        <p>Descubra destinos de viagem imperdíveis!</p>
+                    </div>
+                </div>
+                
+                <div class="topic">
+                    <img src="./mcosfos_files/8e814405e0e72e82e0ae4752e67c795a.jpg" alt="Dicas de viagem">
+                    <div class="topic-content">
+                        <h3>Dicas de viagem</h3>
+                        <p>Tenha uma viagem sem complicações com essas dicas para antes, durante e após a viagem.</p>
+                    </div>
+                </div>
+                
+                <div class="topic">
+                    <img src="./mcosfos_files/7ad176dd4e100ddc00d0b332f98dac65.jpg" alt="Itinerários Especiais">
+                    <div class="topic-content">
+                        <h3>Itinerários Especiais</h3>
+                        <p>Aproveite suas férias ao máximo com itinerários exclusivos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section class="contact">
+            <div class="contact-background"></div>
+            <div class="contact-content">
+                <h2>Dados de Contato</h2>
+                
+                <div class="contact-info">
+                    <div class="info-group">
+                        <h3>Endereço</h3>
+                        <p>Pernambuco, Recife</p>
+                    </div>
+                    
+                    <div class="info-group">
+                        <h3>E-mail</h3>
+                        <p>lucasrm004@gmail.com</p>
+                    </div>
+                    
+                    <div class="info-group">
+                        <h3>Telefone</h3>
+                        <p>(81) 98790-0427</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    function selecionar(element){
+        console.log(element)
+    }
+
+</script>
+</html>
