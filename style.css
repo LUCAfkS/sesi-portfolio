@@ -25,7 +25,7 @@ section {
 
 /* Hero Section */
 .hero {
-    height: 768px;
+    height: 950px;
     position: relative;
     display: flex;
     align-items: center;
@@ -38,8 +38,9 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 0px 0px 28px 28px;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('/1326091.jpeg');
+                url('img/mountainsnow.jpeg');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -99,7 +100,7 @@ section {
 }
 
 .about-image img {
-    width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 8px;
 }
@@ -122,9 +123,9 @@ section {
     border-radius: 1000px;
     color: white;
     font-weight: 400;
-    font-size: 33px;
+    font-size: 28px;
     text-align: center;
-    min-width: 236px;
+    min-width: 200px;
     transition: transform 0.5s ease;
 }
 .category-tag:hover{
@@ -133,23 +134,23 @@ section {
 }
 
 .matematica {
-    background: linear-gradient(135deg, #33707e, #abc9ee);
+    background: linear-gradient(135deg, #f2c987, #a7c5f2);
 }
 
 .natureza {
-    background: linear-gradient(135deg, #33707e, #abc9ee);
+    background: linear-gradient(135deg, #f2c987, #a7c5f2);
 }
 
 .linguagem {
-    background: linear-gradient(135deg, #33707e, #abc9ee);
+    background: linear-gradient(135deg, #f2c987, #a7c5f2);
 }
 
 .humanas {
-    background: linear-gradient(135deg, #33707e, #abc9ee);
+    background: linear-gradient(135deg, #f2c987, #a7c5f2);
 }
 
 .senai {
-    background: linear-gradient(135deg, #33707e, #abc9ee);
+    background: linear-gradient(135deg, #f2c987, #a7c5f2);
 }
 
 .projects-grid {
@@ -188,7 +189,7 @@ section {
 }
 
 .blog h2 {
-    font-size: 53px;
+    font-size: 33px;
     margin-bottom: 60px;
     font-weight: 400;
 }
@@ -228,7 +229,7 @@ section {
 
 /* Contact Section */
 .contact {
-    height: 768px;
+    height: 950px;
     position: relative;
     display: flex;
     align-items: center;
@@ -241,8 +242,9 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 28px 28px 0px 0px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('./mcosfos_files/e03cc9186cedf1da399e69390cbfc573.jpg');
+                url('img/snowmountain.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
