@@ -73,14 +73,14 @@ function selecionar(theme) {
             var t3 = criar_elemento(
                 img = "img/sc21.png",
                 h3 = "Orgulho-Sesi",
-                p = "Sala de jogos digitais, produzi minha maior criação até hoje.<br>OBS: O code fonte esta na aba de senai",
+                p = "Sala de jogos digitais, produzi minha maior criação até hoje.<br>OBS: O code fonte esta na aba de senai.",
                 
                 classes = "clickerv"
             )
             var t4 = criar_elemento(
                 img = "img/aposta.jpeg",
                 h3 = "Blackjack",
-                p = "Apostar muito, contar carta e fazer calculos Probabilísticos",
+                p = "Apostar muito, contar carta e fazer calculos Probabilísticos.",
                 
                 classes = "clickerv"
             )
@@ -134,13 +134,13 @@ function selecionar(theme) {
                 var t2 = criar_elemento(
                     "img/pesquisa.jpeg",
                     "Pesquisa-Artifícios",
-                    "pesquisa sobre o fogos de artifício",
+                    "pesquisa sobre o fogos de artifício.",
                     "clickerv"
                 )
                 var t3 = criar_elemento(
                     "img/atv.jpeg",
                     "Atividade-75",
-                    "Para reforçar o conhecimento sobre radiações nucleares: Beta,Alpha,Gama",
+                    "Para reforçar o conhecimento sobre radiações nucleares: Beta,Alpha,Gama.",
                     "clickerv"
                 )
 
@@ -164,14 +164,14 @@ function selecionar(theme) {
             <img src="img/gostar.png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Superações</h3>
-                        <p>significantes, nenhuma</p>
+                        <p>significantes, nenhuma.</p>
                     </div>`
             
             document.getElementById('gostei').innerHTML = `
             <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Gostei</h3>
-                        <p>do filme Arrival</p>
+                        <p>do filme Arrival.</p>
                     </div>`
 
                 var t0 = criar_elemento(
@@ -189,7 +189,7 @@ function selecionar(theme) {
                 var t2 = criar_elemento(
                     "img/cafe.jpeg",
                     "Café-Literário",
-                    "Discurssão a respeito da literatura modernista brasileira <br>Ex: Graciliano Ramos...",
+                    "Discurssão a respeito do livro Dom Casmurro.",
                     "clickerv"
                 )
 
@@ -216,7 +216,7 @@ function selecionar(theme) {
                 var t2 = criar_elemento(
                     "img/colombia.png",
                     "Ditadura-Colombiana",
-                    "Explicar a ditadura colombiana e o governo de Gustavo Rojas Pinilla ",
+                    "Explicar a ditadura colombiana e o governo de Gustavo Rojas Pinilla. ",
                     "clicker",
                     "https://www.canva.com/design/DAGyfGqSq9Y/wW20iMMFYU1QJQD2GVxDJA/edit?utm_content=DAGyfGqSq9Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                 )
@@ -239,7 +239,7 @@ function selecionar(theme) {
             var t1 = criar_elemento(
                 "img/github.png",
                 "Portfolio-de-Projetos",
-                `Meu github`,
+                `Meu github.`,
                 "clicker",
                 "https://github.com/LUCAfkS"
             )   
