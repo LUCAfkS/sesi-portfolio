@@ -1,98 +1,254 @@
+function criar_elemento(img,h3,p,classes,link=""){
+    if(link){
+        var link = `onclick = "window.open('${link}', '_blank')"`
+    }
+    var elemento = document.createElement('div');
+            elemento.className = 'project'
+            elemento.innerHTML = `
+                <img src=${img} alt="Projeto Matemática" class = ${classes} ${link} >
+                    <h3>${h3}</h3>
+                    <p>${p}
+                    </p>
+            `;
+    return(elemento)
+}
+// var t0 = criar_elemento(
+//     img = "",
+//     h3 = "",
+//     p = "",
+//     classes = "",
+//     link = ""
+// )
+
 function selecionar(theme) {
     switch (theme) {
         case 'MATEMÁTICA':
             document.getElementById('projects-grid-0').innerHTML = ''
 
-            var t0 = document.createElement('div');
-            t0.className = 'project'
-            t0.innerHTML = `
-                <img src="img/teste_probabilidade.jpeg" alt="Projeto Matemática" class = "clickerv">
-                    <h3>Teste Probabilístico</h3>
-                    <p>Teste para testar o conhecimento referente a probabilidade, na qual éderivado do principio fundamental da contagem.
-                    </p>
-            `;
-            var t1 = document.createElement('div');
-            t1.className = 'project'
-            t1.innerHTML = `
-                <img src="img/curriculo.png" alt="Projeto Matemática" class = "clicker" onclick = "window.open('https://www.canva.com/design/DAGAiWDKRvA/PfNlptdBDc6SHErIkUWV9A/edit?utm_content=DAGAiWDKRvA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton')">
-                    <h3>Curriculum Vitae</h3>
-                    <p>Criação de curriculo e sobre espaços amostrais não equiparáveis.
-                    </p>
-            `;
-            var t2 = document.createElement('div');
-            t2.className = 'project'
-            t2.innerHTML = `
-                <img src="img/avalia-mat1.png" alt="Projeto Matemática" class = "clickerv">
-                    <h3>Avalia-sesi-enem-1</h3>
-                    <p>Primeira nota do avalia-sesi enem do ano.
-                    </p>
-            `;
+            document.getElementById('desgostei').innerHTML = `
+            <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Não gostei</h3>
+                        <p>pelo contrário, nada a reclamar</p>
+                    </div>`
+
+            document.getElementById('superação').innerHTML = `
+            <img src="img/gostar.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Superações</h3>
+                        <p>no Desenvolvimento em probabilidade e estatisticas</p>
+                    </div>`
+            
+            document.getElementById('gostei').innerHTML = `
+            <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Gostei</h3>
+                        <p>do Blackjack</p>
+                    </div>`
+            
+
+
+
+            var t0 = criar_elemento(
+                img = "img/teste_probabilidade.jpeg",
+                h3 = "Teste Probabilístico",
+                p = "Teste para testar o conhecimento referente a probabilidade, na qual éderivado do principio fundamental da contagem.",
+                
+                classes = "clickerv"
+            )
+            var t1 = criar_elemento(
+                img = "img/curriculo.png",
+                h3 = "Curriculum Vitae",
+                p = "Criação de curriculo e sobre espaços amostrais não equiparáveis.",
+                classes = "clicker",
+                link = "https://www.canva.com/design/DAGAiWDKRvA/PfNlptdBDc6SHErIkUWV9A/edit?utm_content=DAGAiWDKRvA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            )
+            var t2 = criar_elemento(
+                img = "img/avalia-mat1.png",
+                h3 = "Avalia-sesi-enem-1",
+                p = "Primeira nota do avalia-sesi enem do ano.",
+                
+                classes = "clickerv"
+            )
+            var t3 = criar_elemento(
+                img = "img/sc21.png",
+                h3 = "Orgulho-Sesi",
+                p = "Sala de jogos digitais, produzi minha maior criação até hoje.<br>OBS: O code fonte esta na aba de senai",
+                
+                classes = "clickerv"
+            )
+            var t4 = criar_elemento(
+                img = "img/aposta.jpeg",
+                h3 = "Blackjack",
+                p = "Apostar muito, contar carta e fazer calculos Probabilísticos",
+                
+                classes = "clickerv"
+            )
+        
             document.getElementById('projects-grid-0').appendChild(t0);
             document.getElementById('projects-grid-0').appendChild(t1);
             document.getElementById('projects-grid-0').appendChild(t2);
-
+            document.getElementById('projects-grid-0').appendChild(t3);
+            document.getElementById('projects-grid-0').appendChild(t4);
+            
             break;
+            
+            case 'NATUREZA':
+                document.getElementById('projects-grid-0').innerHTML = ''
 
-        case 'NATUREZA':
-            document.getElementById('projects-grid-0').innerHTML = ''
+                document.getElementById('desgostei').innerHTML = `
+            <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Não gostei</h3>
+                        <p>Da falta de biologia, gosto bastante principalmente maritima. mesmo que o assunto a ser dado era Histologia</p>
+                    </div>`
 
-            var t0 = document.createElement('div');
-            t0.className = 'project'
-            t0.innerHTML = `
-                <img src="img/teste_probabilidade.jpeg" alt="Projeto Matemática" class = "clickerv">
-                <h3>Mapa-Ondulatórias</h3>
-                <p>Mapa mental criado com intuito de ampliarmos o conhecimento sobre ondulatoria.
-                </p>
-                `;
-            var t1 = document.createElement('div');
-            t1.className = 'project'
-            t1.innerHTML = `
-                <img src="img/teste_probabilidade.jpeg" alt="Projeto Matemática" class = "clickerv">
-                <h3>Relatorio-Fenômenos-Ondulatórios</h3>
-                <p>Elaborado para pesquisar mais sobre fenômenos advindos de ondas.
-                </p>
-                `;
+            document.getElementById('superação').innerHTML = `
+            <img src="img/gostar.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Superações</h3>
+                        <p>significantes, nenhuma</p>
+                    </div>`
+            
+            document.getElementById('gostei').innerHTML = `
+            <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Gostei</h3>
+                        <p>do filme Arrival</p>
+                    </div>`
+
+                
+                var t0 = criar_elemento(
+                    img = "img/mapondu.jpeg",
+                    h3 = "Mapa-Ondulatórias",
+                    p = "Mapa mental criado com intuito de ampliarmos o conhecimento sobre ondulatoria.",
+                    classes = "clickerv"
+                )
+                var t1 = criar_elemento(
+                    img = "img/relatorio.png",
+                    h3 = "Relatorio-Fenômenos-Ondulatórios",
+                    p = `Elaborado para pesquisar mais sobre fenômenos advindos de ondas.`,
+                    classes = "clicker",
+                    link = "https://www.canva.com/design/DAGqh3GFpEM/xfyC5vvYRLtfki-P8rWJTQ/edit?utm_content=DAGqh3GFpEM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                )
+                var t2 = criar_elemento(
+                    "img/pesquisa.jpeg",
+                    "Pesquisa-Artifícios",
+                    "pesquisa sobre o fogos de artifício",
+                    "clickerv"
+                )
+                var t3 = criar_elemento(
+                    "img/atv.jpeg",
+                    "Atividade-75",
+                    "Para reforçar o conhecimento sobre radiações nucleares: Beta,Alpha,Gama",
+                    "clickerv"
+                )
 
             document.getElementById('projects-grid-0').appendChild(t0);
             document.getElementById('projects-grid-0').appendChild(t1);
+            document.getElementById('projects-grid-0').appendChild(t2);
+            document.getElementById('projects-grid-0').appendChild(t3);
             break;
 
         case 'LINGUAGEM':
+                document.getElementById('projects-grid-0').innerHTML = ''
+
+                document.getElementById('desgostei').innerHTML = `
+            <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Não gostei</h3>
+                        <p>Da falta de biologia, gosto bastante principalmente maritima. mesmo que o assunto a ser dado era Histologia</p>
+                    </div>`
+
+            document.getElementById('superação').innerHTML = `
+            <img src="img/gostar.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Superações</h3>
+                        <p>significantes, nenhuma</p>
+                    </div>`
+            
+            document.getElementById('gostei').innerHTML = `
+            <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Gostei</h3>
+                        <p>do filme Arrival</p>
+                    </div>`
+
+                var t0 = criar_elemento(
+                    "img/red08.png",
+                    "Red1000-08",
+                    "Tema: A literatura como meio de denúncia social da natureza<br><br>Nota:760",
+                    "clickerv"
+                )
+                var t1 = criar_elemento(
+                    "img/atv.jpeg",
+                    "Red1000-09",
+                    "Tema: <br><br>Nota:",
+                    "clickerv"
+                )
+                var t2 = criar_elemento(
+                    "img/cafe.jpeg",
+                    "Café-Literário",
+                    "Discurssão a respeito da literatura modernista brasileira <br>Ex: Graciliano Ramos...",
+                    "clickerv"
+                )
+
+                document.getElementById('projects-grid-0').appendChild(t0);
+                document.getElementById('projects-grid-0').appendChild(t1);
+                document.getElementById('projects-grid-0').appendChild(t2);
             break;
 
         case 'HUMANAS':
             document.getElementById('projects-grid-0').innerHTML = ''
+                var t0 = criar_elemento(
+                    "img/qimo.png",
+                    "Qimo-kids",
+                    "A solução para a adultização de crianças.",
+                    "clicker",
+                    "https://www.canva.com/design/DAGwbCFS3g8/OcQv5hb87S5Mn8mAnbhnRw/edit?utm_content=DAGwbCFS3g8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                )
+                var t1 = criar_elemento(
+                    "img/arvore.jpeg",
+                    "Arvores da problematização",
+                    "Dois problemas socias, um deles é adultização das crianças.",
+                    "clickerv",
+                )
+                var t2 = criar_elemento(
+                    "img/colombia.png",
+                    "Ditadura-Colombiana",
+                    "Explicar a ditadura colombiana e o governo de Gustavo Rojas Pinilla ",
+                    "clicker",
+                    "https://www.canva.com/design/DAGyfGqSq9Y/wW20iMMFYU1QJQD2GVxDJA/edit?utm_content=DAGyfGqSq9Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                )
 
-            var t0 = document.createElement('div');
-            t0.className = 'project'
-            t0.innerHTML = `
-                <img src="img/humanas/qimo_kids.png" class= "clicker" alt="Projeto Humanas" onclick="window.open('https://www.canva.com/design/DAGwbCFS3g8/OcQv5hb87S5Mn8mAnbhnRw/edit?utm_content=DAGwbCFS3g8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton','_blank')">
-                    <h3>Qimo-kids</h3>
-                    <p>A solução para a adultização de crianças.</p>
-            `;
-            var t1 = document.createElement('div');
-            t1.className = 'project'
-            t1.innerHTML = `
-                <img src="img/humanas/arvores.png" alt="Projeto Humanas">
-                    <h3>Arvores da problematização</h3>
-                    <p>Dois problemas socias, um deles é adultização das crianças.</p>
-            `;
 
             document.getElementById('projects-grid-0').appendChild(t0);
             document.getElementById('projects-grid-0').appendChild(t1);
+            document.getElementById('projects-grid-0').appendChild(t2);
             break;
 
         case 'SENAI':
             document.getElementById('projects-grid-0').innerHTML = ''
+            var t0 = criar_elemento(
+                "img/onças.png",
+                "Shark-tank-Propostas",
+                `Propostas criadas pelos alunos para aperfeiçoar o famoso reality show 'shark tank'.</p>`,
+                "clicker",
+                "https://www.canva.com/design/DAGwm4aKF68/Lm--Km6DFPzH4UbOB3PjIQ/edit?utm_content=DAGwm4aKF68&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"          
+            )
+            var t1 = criar_elemento(
+                "img/github.png",
+                "Portfolio-de-Projetos",
+                `Meu github`,
+                "clicker",
+                "https://github.com/LUCAfkS"
+            )   
+            
 
-            var t0 = document.createElement('div');
-            t0.className = 'project'
-            t0.innerHTML = `
-            <img src="img/senai/shark_tank.png" class= "clicker" alt="Projeto Humanas" onclick="window.open('https://www.canva.com/design/DAGwm4aKF68/Lm--Km6DFPzH4UbOB3PjIQ/edit','_blank')">
-            <h3>Shark tank - Propostas</h3>
-            <p>Propostas criadas pelos alunos para aperfeiçoar o famoso reality show 'shark tank'.</p>
-            `;
             document.getElementById('projects-grid-0').appendChild(t0);
+            document.getElementById('projects-grid-0').appendChild(t1);
             break;
     }
 }
+
+window.onload = selecionar('MATEMÁTICA')
