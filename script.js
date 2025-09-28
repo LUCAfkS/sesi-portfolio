@@ -285,7 +285,7 @@ function selecionar(theme) {
                 "Portfolio-de-Projetos",
                 `Meu github.`,
                 "clicker",
-                "https://github.com/LUCAfkS"
+                "https://github.com/lucafks"
             )   
             
 
