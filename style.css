@@ -12,6 +12,7 @@ body {
     background-color: #fff;
 }
 
+
 .container {
     width: 100%;
     max-width: 1466px;
@@ -49,7 +50,7 @@ section {
 .hero-content {
     color: white;
     padding: 0 80px;
-    max-width: 836px;
+    max-width: 1000px;
 }
 
 .hero-content h1 {
@@ -63,6 +64,9 @@ section {
     font-size: 33px;
     font-weight: 400;
     margin-bottom: 30px;
+}
+span{
+    color: #a7c5f2;
 }
 
 .portfolio-title {
@@ -185,6 +189,7 @@ section {
     position: absolute;
     transform: scale(2);
     right: 1%;
+    z-index: 1 ;
 }
 
 .clickerv{

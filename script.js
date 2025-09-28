@@ -29,21 +29,21 @@ function selecionar(theme) {
             <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Não gostei</h3>
-                        <p>pelo contrário, nada a reclamar</p>
+                        <p>Pelo contrário, nada a reclamar.</p>
                     </div>`
 
             document.getElementById('superação').innerHTML = `
             <img src="img/gostar.png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Superações</h3>
-                        <p>no Desenvolvimento em probabilidade e estatisticas</p>
+                        <p>No Desenvolvimento em probabilidade e estatisticas.</p>
                     </div>`
             
             document.getElementById('gostei').innerHTML = `
             <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Gostei</h3>
-                        <p>do Blackjack</p>
+                        <p>Do Blackjack.</p>
                     </div>`
             
 
@@ -100,21 +100,21 @@ function selecionar(theme) {
             <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Não gostei</h3>
-                        <p>Da falta de biologia, gosto bastante principalmente maritima. mesmo que o assunto a ser dado era Histologia</p>
+                        <p>Da falta de biologia, gosto bastante, principalmente maritima. Apesar do ultimo assunto dado tenha sido Histologia.</p>
                     </div>`
 
             document.getElementById('superação').innerHTML = `
             <img src="img/gostar.png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Superações</h3>
-                        <p>significantes, nenhuma</p>
+                        <p>Significantes, nenhuma.</p>
                     </div>`
             
             document.getElementById('gostei').innerHTML = `
             <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Gostei</h3>
-                        <p>do filme Arrival</p>
+                        <p>Do filme Arrival.</p>
                     </div>`
 
                 
@@ -157,21 +157,21 @@ function selecionar(theme) {
             <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Não gostei</h3>
-                        <p>Da falta de biologia, gosto bastante principalmente maritima. mesmo que o assunto a ser dado era Histologia</p>
+                        <p>Pelo contrário, nada a reclamar.</p>
                     </div>`
 
             document.getElementById('superação').innerHTML = `
             <img src="img/gostar.png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Superações</h3>
-                        <p>significantes, nenhuma.</p>
+                        <p>Red1000 apesar denão ter sido 1000.</p>
                     </div>`
             
             document.getElementById('gostei').innerHTML = `
             <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
                     <div class="topic-content">
                         <h3>Gostei</h3>
-                        <p>do filme Arrival.</p>
+                        <p>Do café literário.</p>
                     </div>`
 
                 var t0 = criar_elemento(
@@ -181,9 +181,9 @@ function selecionar(theme) {
                     "clickerv"
                 )
                 var t1 = criar_elemento(
-                    "img/atv.jpeg",
+                    "img/red09.png",
                     "Red1000-09",
-                    "Tema: <br><br>Nota:",
+                    "Tema: Caminhos para uma comunicação não violenta no Brasil<br><br>Nota:840",
                     "clickerv"
                 )
                 var t2 = criar_elemento(
@@ -200,6 +200,28 @@ function selecionar(theme) {
 
         case 'HUMANAS':
             document.getElementById('projects-grid-0').innerHTML = ''
+
+                document.getElementById('desgostei').innerHTML = `
+            <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Não gostei</h3>
+                        <p>Pelo contrário, nada a reclamar.</p>
+                    </div>`
+
+            document.getElementById('superação').innerHTML = `
+            <img src="img/gostar.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Superações</h3>
+                        <p>No simulado, pois acredito que tenha acertado maior parte das questões.</p>
+                    </div>`
+            
+            document.getElementById('gostei').innerHTML = `
+            <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Gostei</h3>
+                        <p>Da apresentação do Qimo-Kids. O slide ficou show.</p>
+                    </div>`
+
                 var t0 = criar_elemento(
                     "img/qimo.png",
                     "Qimo-kids",
@@ -229,6 +251,28 @@ function selecionar(theme) {
 
         case 'SENAI':
             document.getElementById('projects-grid-0').innerHTML = ''
+
+                document.getElementById('desgostei').innerHTML = `
+            <img src="img/nao-gosto.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Não gostei</h3>
+                        <p>Da progressão um pouco lenta dos assuntos, sinto que o aprendizado poderia ser maior e mais rapido.</p>
+                    </div>`
+
+            document.getElementById('superação').innerHTML = `
+            <img src="img/gostar.png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Superações</h3>
+                        <p>Na criação de um projeto grande, contudo, o resultado não foi de meu total agrado, talvez recomece ele do zero.</p>
+                    </div>`
+            
+            document.getElementById('gostei').innerHTML = `
+            <img src="img/gostar (1).png" alt="Atrações Imperdíveis">
+                    <div class="topic-content">
+                        <h3>Gostei</h3>
+                        <p>Da mini hackathon, fazer trabalhos assim é legal, mas as vezes você depende mais dos outros, para um produto interessante. </p>
+                    </div>`
+
             var t0 = criar_elemento(
                 "img/onças.png",
                 "Shark-tank-Propostas",
